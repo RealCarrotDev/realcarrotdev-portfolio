@@ -1,81 +1,39 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import HorizontalCard from "../components/HorizontalCard.astro";
-import { getCollection } from "astro:content";
-import createSlug from "../lib/createSlug"
-
-const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
-
-const last_posts = posts.slice(0, 3);
+/* We've removed the imports for HorizontalCard, getCollection, etc. 
+  because we are no longer showing "latest posts" on this page. 
+  This makes the homepage clean.
+*/
 ---
 
 <BaseLayout sideBarActiveItemID="home">
   <div class="pb-12 mt-5">
+    
     <div class="text-5xl font-bold">Carrot</div>
-<div class="text-3xl py-3 font-bold">Blockbench & Aseprite Animator</div>
+    
+    <div class="text-lg font-medium text-gray-500 opacity-80 -mt-1">
+      realcarrotdev
+    </div>
 
-<div class="py-2 text-lg space-y-4">
-  <p>
-    I'm a self-taught 3D/2D artist with 5 years of experience, specializing in <strong class="text-accent">Blockbench</strong> and <strong class="text-accent">Aseprite</strong>.
-  </p>
-  <p>
-    To date, I've created over <strong class="font-bold">30,000+ animations</strong> and hundreds of animated textures. I also have a passion for creating in-depth guides and FAQs for the community.
-  </p>
-</div>
-   <div class="mt-8">
-  <a class="btn btn-primary" href="/projects">
-    View My Animations
-  </a>
-  <a href="/blog" class="btn btn-outline ml-5">
-    Read My Animation Guide
-  </a>
-</div>
+    <div class="text-3xl py-3 pt-4 font-bold">Blockbench & Aseprite Animator</div>
+
+    <div class="py-2 text-lg space-y-4">
+      <p>
+        I'm a self-taught 3D/2D artist with 5 years of experience, specializing in <strong class="text-accent">Blockbench</strong> and <strong class="text-accent">Aseprite</strong>.
+      </p>
+      <p>
+        To date, I've created over <strong class="font-bold">30,000+ animations</strong> and hundreds of animated textures. I also have a passion for creating in-depth guides and FAQs for the community.
+      </p>
+    </div>
+
+    <div class="mt-8">
+      <a class="btn btn-primary" href="/projects">
+        View My Animations
+      </a>
+      <a href="/blog" class="btn btn-outline ml-5">
+        Read My Animation Guide
+      </a>
+    </div>
+
   </div>
-
-  <div>
-    <div class="text-3xl w-full font-bold mb-2">My last projects {"</>"}</div>
-  </div>
-
-  <HorizontalCard
-    title="Demo Project 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="NEW"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="FOSS"
-  />
-
-  <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
-  </div>
-
-  {
-    last_posts.map((post) => (
-      <>
-        <HorizontalCard
-          title={post.data.title}
-          img={post.data.heroImage}
-          desc={post.data.description}
-          url={"/blog/" + createSlug(post.data.title, post.slug)}
-          target="_self"
-          badge={post.data.badge}
-        />
-        <div class="divider my-0" />
-      </>
-    ))
-  }
 </BaseLayout>
