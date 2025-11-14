@@ -1,56 +1,111 @@
 ---
-title: "Demo Post 1"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-pubDate: "Sep 10 2022"
-heroImage: "/post_img.webp"
-tags: ["tokio"]
+title: "The Ultimate Cobblemon Animation Guide"
+publishDate: "Nov 14 2025"
+description: "A complete guide to keyframes, pivot points, and Molang for creating your own Cobblemon animations."
+img: "/realcarrotdev-banner.jpg"
+img_alt: "RealCarrotDev working at a desk"
+tags:
+  - Guide
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer
-malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas
-pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse
-platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada
-fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus
-vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea
-dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst
-quisque sagittis purus sit amet.
+## Animation Explained
+*Work In Progress*
 
-Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum
-quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet.
-Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus.
-Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit
-ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt
-dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc.
-Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus
-arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed
-tempus urna et pharetra pharetra massa massa ultricies mi.
+### What is an animation?
+Animation in simple terms is the act of bringing a still image or model to life through various means in which we will be discussing throughout this guide.
 
-Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam
-sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec.
-Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna
-fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et
-egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel
-turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra
-nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus
-vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim
-praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus
-egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam
-ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor
-purus non. Amet dictum sit amet justo donec enim.
+### Basics
+You'll be starting off with clicking on the **Animate** tab.
 
-Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut
-consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra.
-Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor
-dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor
-dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque
-eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim
-blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices
-tincidunt arcu. Id cursus metus aliquam eleifend mi.
+Once you reach this screen you might see some animations already like this:
+`ground_idle` `animation.lunaris.ground_i` or it might just be blank.
 
-Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus
-imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu
-cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt
-dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat
-sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida.
-Egestas integer eget aliquet nibh praesent tristique magna.
+If it's blank, you'll want to click the `[+]` icon `ANIMATIONS` which will give you this screen:
+*(You can add an image here later)*
+
+This screen you will name the animation, usually along the lines of: `animation.(pokemonname).ground_idle` or some other form of animation, but that's the format you need and click **Confirm**.
+
+> **- Please note: `animation names need to be lowercase!`**
+
+You will want to make sure that you do the basic animations which are: `ground_idle` | `air_idle` | `water_idle` | `ground_walk` | `water_swim` | `air_fly` | `blink`
+
+When you are done with your animations, you will click the `[Save]` icon which will save the animations as a **json** file, please make sure it's named appropriately such as `(geodude.animation)`
+
+To begin animating please look at: **Key Frames** & **Molang** for the different styles of animation and examples!
+
+---
+
+### What are Pivot Points?
+Pivot points are in simplest terms an anchor for rotation and movement.
+
+Pivot points are a BIG part of how animations will turn out, because while yes you can keyframe, using Molang with incorrect pivot points will result in a disastrous abomination.
+
+I'll give some examples of how pivot points **should** be set up.
+
+**`NOT ALL` pivot points will be the same.**
+
+Examples:
+* Snake/Serpent pivots will be like tails.
+* Humanoid pivots you just have to think of yourself in front of a mirror... How do **`YOU`** move.
+* Obscure/Custom Shaped pokemon just play with the pivots and rotate the arms in multiple directions until it looks smooth.
+
+> **`Note: If you need assistance with pivots, please DM me (Carrot) or DragonKid.`**
+
+Examples of correct and incorrect pivot placements in tails.
+*(You can add an image here later)*
+
+In order to change the pivot points, you can either press **`P`** or you can click the **target** icon.
+*(You- can add an image here later)*
+
+Pivot points are **supposed** to be done by the modelers, but 99% of the time, the pivot will be incorrectly placed, Cobblemon themselves have this issue as well.
+
+> **`Note: Please report ALL incorrect pivot points to me (Carrot)`**
+
+---
+
+## Key Frames
+*Work In Progress*
+
+### Key Frames
+Generally speaking, you'll be using key frames in `walking`, `faint`, `blink`, and any other `custom` animation you're looking to add.
+
+> **`Note: There ARE exceptions to this! Please see: Molang`**
+
+When animating with key frames, if you're trying to loop an animation, please make sure to copy the first frame and paste it to the end of the timeline.
+
+**`There are times when this won't work, don't fret, just DM Carrot for assistance!`**
+
+Example of beginning and end below:
+*(You can add an image here later)*
+
+> **`Note: You CAN mix and match interpolations! ⬆`**
+
+³ Exceptions:
+* **`You cannot have Molang side by side with Smooth key frames.`**
+* **`Your Molang cannot be Smooth interpolation.`**
+
+To get started with key frames you will click a group/bone on the model, and then you will click the `[+]` icon on the timeline. This will create a linear keyframe which you can tell by the diamond shape.
+
+In order to **switch** between interpolations, you will right click on the key frames that you want changed, and then you will click interpolations, and select which one you'd like:
+*(You can add an image here later)*
+
+> **`Note: You can select multiple keyframes by holding left click and selecting multiple key frames.`**
+
+### Linear Key Frames
+**`Linear key frames`** are noted by the distinct **`diamond`** shape.
+
+Below is an example of a linear key framed **`physical attack`** animation! -
+*(You can add an image here later)*
+
+As you can see it's not exactly **`smooth`**, most linear key framed animations will seem a bit chunky! You can manipulate the key frames in the right positions to seem smooth, but it will never be truly **`seamless`**.
+
+> **`Note: Sometimes it's preferred to use Linear over other interpolations!`**
+
+This is what the animation above looks like on the timeline, it's relatively neat looking, but it can get quite messy!
+*(You can add an image here later)*
+
+### Smooth Key Frames
+**`Smooth key frames`** are noted by the distinct **`circular`** shape.
+
+### Step Key Frames
+**`Step key frames`** are noted by the distinct **`play button`** shape.
