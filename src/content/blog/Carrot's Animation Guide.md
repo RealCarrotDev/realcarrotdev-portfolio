@@ -1,11 +1,8 @@
 ---
 title: "The Ultimate Cobblemon Animation Guide"
-publishDate: "Nov 14 2025"
 description: "A complete guide to keyframes, pivot points, and Molang for creating your own Cobblemon animations."
-img: "/realcarrotdev-banner.jpg"
-img_alt: "RealCarrotDev working at a desk"
-tags:
-  - Guide
+pubDate: "Nov 14 2025"
+heroImage: "/realcarrotdev-banner.jpg"
 ---
 
 ## Animation Explained
