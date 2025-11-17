@@ -1,6 +1,6 @@
 ---
-title: "The Ultimate Cobblemon Animation Guide"
-description: "A complete guide to keyframes, pivot points, and Molang for creating your own Cobblemon animations."
+title: "Carrot's Blockbench Animation Guide"
+description: "A guide to keyframes, pivot points, and Molang for creating your own Blockbench animations."
 pubDate: "Nov 14 2025"
 heroImage: "/pyukumuku_love.gif"
 ---
