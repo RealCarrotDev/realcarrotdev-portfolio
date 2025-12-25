@@ -14,11 +14,28 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
     
     <div class="mt-8 w-full flex justify-center">
       <iframe 
-        id='kofiframe' 
-        src='https://ko-fi.com/realcarrotdev/?hidefeed=true&widget=true&embed=true&preview=true' 
-        style='border:none;width:100%;padding:4px;background:transparent;' 
-        height='712' 
-        title='realcarrotdev'
+       <div class="mt-8 w-full flex justify-center">
+      <div class="kofi-card">
+        <iframe 
+          id='kofiframe' 
+          src='https://ko-fi.com/realcarrotdev/?hidefeed=true&widget=true&embed=true&preview=true' 
+          style='border:none;width:100%;padding:0;' 
+          height='712' 
+          title='realcarrotdev'
+        ></iframe>
+      </div>
+    </div>
+    
+    <style>
+      .kofi-card {
+        background: white; /* Matches the iframe background */
+        border-radius: 16px; /* Rounds the corners */
+        overflow: hidden; /* Clips the square iframe corners */
+        box-shadow: 0 10px 30px rgba(0,0,0,0.5); /* Adds a nice shadow */
+        max-width: 500px; /* Keeps it from getting too wide */
+        width: 100%;
+      }
+    </style>
       ></iframe>
     </div>
   </div>
