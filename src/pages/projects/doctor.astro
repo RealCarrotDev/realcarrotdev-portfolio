@@ -38,10 +38,30 @@ import HorizontalCard from "../../components/HorizontalCard.astro";
         <details class="collapse collapse-plus bg-base-100 mb-2 border border-base-content/10">
           <summary class="collapse-title font-bold">2. Balloon Pikachu</summary>
           <div class="collapse-content">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-4 pb-4">
-              <div class="card bg-base-100 shadow-md border border-base-200"><figure class="h-32 flex items-center justify-center bg-base-200/50 p-2"><img src="/projects/doctor/pikachu_balloon/idle.gif" class="max-h-full max-w-full object-contain" /></figure><div class="text-center text-xs font-bold py-1 bg-base-300">Idle</div></div>
-              <div class="card bg-base-100 shadow-md border border-base-200"><figure class="h-32 flex items-center justify-center bg-base-200/50 p-2"><img src="/projects/doctor/pikachu_balloon/special.gif" class="max-h-full max-w-full object-contain" /></figure><div class="text-center text-xs font-bold py-1 bg-base-300">Flying</div></div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-4 pb-4">
+              <div class="rounded-xl overflow-hidden shadow-lg">
+                <img src="/projects/doctor/pikachu_balloon/idle.gif" alt="Idle" class="w-full" />
+                <div class="text-center text-xs py-1 bg-base-200">Idle</div>
+              </div>
+              <div class="rounded-xl overflow-hidden shadow-lg">
+                <img src="/projects/doctor/pikachu_balloon/battle.gif" alt="Battle" class="w-full" />
+                <div class="text-center text-xs py-1 bg-base-200">Battle</div>
+              </div>
+              <div class="rounded-xl overflow-hidden shadow-lg">
+                <img src="/projects/doctor/pikachu_balloon/special.gif" alt="Special" class="w-full" />
+                <div class="text-center text-xs py-1 bg-base-200">Special</div>
+              </div>
+              <div class="rounded-xl overflow-hidden shadow-lg">
+                <img src="/projects/doctor/pikachu_balloon/faint.gif" alt="Faint" class="w-full" />
+                <div class="text-center text-xs py-1 bg-base-200">Faint</div>
+              </div>
+              <div class="rounded-xl overflow-hidden shadow-lg">
+                <img src="/projects/doctor/pikachu_balloon/physical.gif" alt="Physical" class="w-full" />
+                <div class="text-center text-xs py-1 bg-base-200">Physical</div>
+              </div>
             </div>
+
           </div>
         </details>
 
@@ -314,3 +334,4 @@ import HorizontalCard from "../../components/HorizontalCard.astro";
   </details>
 
 </BaseLayout>
+
