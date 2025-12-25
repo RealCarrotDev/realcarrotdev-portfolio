@@ -14,7 +14,7 @@ import HorizontalCard from "../../components/HorizontalCard.astro";
 
   <div class="text-5xl font-bold mb-2">Commissions for Doctor</div>
   <div class="text-xl py-2 mb-10 text-gray-400">
-    Extensive collection of custom models including the Pikachu Series, Digimon, and Yugioh assets.
+    Extensive collection of custom animations including the Pikachu Series, Digimon, and Yugioh assets.
   </div>
 
   <details class="collapse collapse-arrow bg-base-300 mb-6">
@@ -38,10 +38,30 @@ import HorizontalCard from "../../components/HorizontalCard.astro";
         <details class="collapse collapse-plus bg-base-100 mb-2 border border-base-content/10">
           <summary class="collapse-title font-bold">2. Balloon Pikachu</summary>
           <div class="collapse-content">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-4 pb-4">
-              <div class="card bg-base-100 shadow-md border border-base-200"><figure class="h-32 flex items-center justify-center bg-base-200/50 p-2"><img src="/projects/doctor/pikachu_balloon/idle.gif" class="max-h-full max-w-full object-contain" /></figure><div class="text-center text-xs font-bold py-1 bg-base-300">Idle</div></div>
-              <div class="card bg-base-100 shadow-md border border-base-200"><figure class="h-32 flex items-center justify-center bg-base-200/50 p-2"><img src="/projects/doctor/pikachu_balloon/special.gif" class="max-h-full max-w-full object-contain" /></figure><div class="text-center text-xs font-bold py-1 bg-base-300">Flying</div></div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-4 pb-4">
+              <div class="rounded-xl overflow-hidden shadow-lg">
+                <img src="/projects/doctor/pikachu_balloon/idle.gif" alt="Idle" class="w-full" />
+                <div class="text-center text-xs py-1 bg-base-200">Idle</div>
+              </div>
+              <div class="rounded-xl overflow-hidden shadow-lg">
+                <img src="/projects/doctor/pikachu_balloon/battle.gif" alt="Battle" class="w-full" />
+                <div class="text-center text-xs py-1 bg-base-200">Battle</div>
+              </div>
+              <div class="rounded-xl overflow-hidden shadow-lg">
+                <img src="/projects/doctor/pikachu_balloon/special.gif" alt="Special" class="w-full" />
+                <div class="text-center text-xs py-1 bg-base-200">Special</div>
+              </div>
+              <div class="rounded-xl overflow-hidden shadow-lg">
+                <img src="/projects/doctor/pikachu_balloon/faint.gif" alt="Faint" class="w-full" />
+                <div class="text-center text-xs py-1 bg-base-200">Faint</div>
+              </div>
+              <div class="rounded-xl overflow-hidden shadow-lg">
+                <img src="/projects/doctor/pikachu_balloon/physical.gif" alt="Physical" class="w-full" />
+                <div class="text-center text-xs py-1 bg-base-200">Physical</div>
+              </div>
             </div>
+
           </div>
         </details>
 
@@ -165,82 +185,112 @@ import HorizontalCard from "../../components/HorizontalCard.astro";
       <div class="pt-4">
         
         <p class="mb-6 opacity-70">
-          Various Digimon models created for the server.
+          Various Digimon models created for the server. Click to expand animations.
         </p>
 
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-4">
-          
-          <div class="card bg-base-100 shadow-md border border-base-200">
-            <figure class="h-32 flex items-center justify-center bg-base-200/50 p-2">
-              <img src="/projects/doctor/agumon/idle.gif" class="max-h-full max-w-full object-contain" />
-            </figure>
-            <div class="text-center text-xs font-bold py-2 bg-base-300">Agumon</div>
+        <details class="collapse collapse-plus bg-base-100 mb-2 border border-base-content/10">
+          <summary class="collapse-title font-bold">Agumon</summary>
+          <div class="collapse-content">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-4 pb-4">
+              <div class="card bg-base-100 shadow-md border border-base-200"><figure class="h-32 flex items-center justify-center bg-base-200/50 p-2"><img src="/projects/doctor/agumon/idle.gif" class="max-h-full max-w-full object-contain" /></figure><div class="text-center text-xs font-bold py-1 bg-base-300">Idle</div></div>
+              <div class="card bg-base-100 shadow-md border border-base-200"><figure class="h-32 flex items-center justify-center bg-base-200/50 p-2"><img src="/projects/doctor/agumon/walk.gif" class="max-h-full max-w-full object-contain" /></figure><div class="text-center text-xs font-bold py-1 bg-base-300">Walk</div></div>
+              <div class="card bg-base-100 shadow-md border border-base-200"><figure class="h-32 flex items-center justify-center bg-base-200/50 p-2"><img src="/projects/doctor/agumon/attack.gif" class="max-h-full max-w-full object-contain" /></figure><div class="text-center text-xs font-bold py-1 bg-base-300">Attack</div></div>
+            </div>
           </div>
+        </details>
 
-          <div class="card bg-base-100 shadow-md border border-base-200">
-            <figure class="h-32 flex items-center justify-center bg-base-200/50 p-2">
-              <img src="/projects/doctor/botamon/idle.gif" class="max-h-full max-w-full object-contain" />
-            </figure>
-            <div class="text-center text-xs font-bold py-2 bg-base-300">Botamon</div>
+        <details class="collapse collapse-plus bg-base-100 mb-2 border border-base-content/10">
+          <summary class="collapse-title font-bold">Botamon</summary>
+          <div class="collapse-content">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-4 pb-4">
+              <div class="card bg-base-100 shadow-md border border-base-200"><figure class="h-32 flex items-center justify-center bg-base-200/50 p-2"><img src="/projects/doctor/botamon/idle.gif" class="max-h-full max-w-full object-contain" /></figure><div class="text-center text-xs font-bold py-1 bg-base-300">Idle</div></div>
+              <div class="card bg-base-100 shadow-md border border-base-200"><figure class="h-32 flex items-center justify-center bg-base-200/50 p-2"><img src="/projects/doctor/botamon/walk.gif" class="max-h-full max-w-full object-contain" /></figure><div class="text-center text-xs font-bold py-1 bg-base-300">Walk</div></div>
+            </div>
           </div>
+        </details>
 
-          <div class="card bg-base-100 shadow-md border border-base-200">
-            <figure class="h-32 flex items-center justify-center bg-base-200/50 p-2">
-              <img src="/projects/doctor/dodomon/idle.gif" class="max-h-full max-w-full object-contain" />
-            </figure>
-            <div class="text-center text-xs font-bold py-2 bg-base-300">Dodomon</div>
+        <details class="collapse collapse-plus bg-base-100 mb-2 border border-base-content/10">
+          <summary class="collapse-title font-bold">Dodomon</summary>
+          <div class="collapse-content">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-4 pb-4">
+              <div class="card bg-base-100 shadow-md border border-base-200"><figure class="h-32 flex items-center justify-center bg-base-200/50 p-2"><img src="/projects/doctor/dodomon/idle.gif" class="max-h-full max-w-full object-contain" /></figure><div class="text-center text-xs font-bold py-1 bg-base-300">Idle</div></div>
+              <div class="card bg-base-100 shadow-md border border-base-200"><figure class="h-32 flex items-center justify-center bg-base-200/50 p-2"><img src="/projects/doctor/dodomon/walk.gif" class="max-h-full max-w-full object-contain" /></figure><div class="text-center text-xs font-bold py-1 bg-base-300">Walk</div></div>
+            </div>
           </div>
+        </details>
 
-          <div class="card bg-base-100 shadow-md border border-base-200">
-            <figure class="h-32 flex items-center justify-center bg-base-200/50 p-2">
-              <img src="/projects/doctor/dorimon/idle.gif" class="max-h-full max-w-full object-contain" />
-            </figure>
-            <div class="text-center text-xs font-bold py-2 bg-base-300">Dorimon</div>
+        <details class="collapse collapse-plus bg-base-100 mb-2 border border-base-content/10">
+          <summary class="collapse-title font-bold">Dorimon</summary>
+          <div class="collapse-content">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-4 pb-4">
+              <div class="card bg-base-100 shadow-md border border-base-200"><figure class="h-32 flex items-center justify-center bg-base-200/50 p-2"><img src="/projects/doctor/dorimon/idle.gif" class="max-h-full max-w-full object-contain" /></figure><div class="text-center text-xs font-bold py-1 bg-base-300">Idle</div></div>
+              <div class="card bg-base-100 shadow-md border border-base-200"><figure class="h-32 flex items-center justify-center bg-base-200/50 p-2"><img src="/projects/doctor/dorimon/walk.gif" class="max-h-full max-w-full object-contain" /></figure><div class="text-center text-xs font-bold py-1 bg-base-300">Walk</div></div>
+            </div>
           </div>
+        </details>
 
-          <div class="card bg-base-100 shadow-md border border-base-200">
-            <figure class="h-32 flex items-center justify-center bg-base-200/50 p-2">
-              <img src="/projects/doctor/dorugamon/idle.gif" class="max-h-full max-w-full object-contain" />
-            </figure>
-            <div class="text-center text-xs font-bold py-2 bg-base-300">Dorugamon</div>
+        <details class="collapse collapse-plus bg-base-100 mb-2 border border-base-content/10">
+          <summary class="collapse-title font-bold">Dorugamon</summary>
+          <div class="collapse-content">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-4 pb-4">
+              <div class="card bg-base-100 shadow-md border border-base-200"><figure class="h-32 flex items-center justify-center bg-base-200/50 p-2"><img src="/projects/doctor/dorugamon/idle.gif" class="max-h-full max-w-full object-contain" /></figure><div class="text-center text-xs font-bold py-1 bg-base-300">Idle</div></div>
+              <div class="card bg-base-100 shadow-md border border-base-200"><figure class="h-32 flex items-center justify-center bg-base-200/50 p-2"><img src="/projects/doctor/dorugamon/walk.gif" class="max-h-full max-w-full object-contain" /></figure><div class="text-center text-xs font-bold py-1 bg-base-300">Walk</div></div>
+              <div class="card bg-base-100 shadow-md border border-base-200"><figure class="h-32 flex items-center justify-center bg-base-200/50 p-2"><img src="/projects/doctor/dorugamon/attack.gif" class="max-h-full max-w-full object-contain" /></figure><div class="text-center text-xs font-bold py-1 bg-base-300">Attack</div></div>
+            </div>
           </div>
+        </details>
 
-          <div class="card bg-base-100 shadow-md border border-base-200">
-            <figure class="h-32 flex items-center justify-center bg-base-200/50 p-2">
-              <img src="/projects/doctor/dorumon/idle.gif" class="max-h-full max-w-full object-contain" />
-            </figure>
-            <div class="text-center text-xs font-bold py-2 bg-base-300">Dorumon</div>
+        <details class="collapse collapse-plus bg-base-100 mb-2 border border-base-content/10">
+          <summary class="collapse-title font-bold">Dorumon</summary>
+          <div class="collapse-content">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-4 pb-4">
+              <div class="card bg-base-100 shadow-md border border-base-200"><figure class="h-32 flex items-center justify-center bg-base-200/50 p-2"><img src="/projects/doctor/dorumon/idle.gif" class="max-h-full max-w-full object-contain" /></figure><div class="text-center text-xs font-bold py-1 bg-base-300">Idle</div></div>
+              <div class="card bg-base-100 shadow-md border border-base-200"><figure class="h-32 flex items-center justify-center bg-base-200/50 p-2"><img src="/projects/doctor/dorumon/walk.gif" class="max-h-full max-w-full object-contain" /></figure><div class="text-center text-xs font-bold py-1 bg-base-300">Walk</div></div>
+              <div class="card bg-base-100 shadow-md border border-base-200"><figure class="h-32 flex items-center justify-center bg-base-200/50 p-2"><img src="/projects/doctor/dorumon/attack.gif" class="max-h-full max-w-full object-contain" /></figure><div class="text-center text-xs font-bold py-1 bg-base-300">Attack</div></div>
+            </div>
           </div>
+        </details>
 
-          <div class="card bg-base-100 shadow-md border border-base-200">
-            <figure class="h-32 flex items-center justify-center bg-base-200/50 p-2">
-              <img src="/projects/doctor/mechamew/idle.gif" class="max-h-full max-w-full object-contain" />
-            </figure>
-            <div class="text-center text-xs font-bold py-2 bg-base-300">Mechamew</div>
+        <details class="collapse collapse-plus bg-base-100 mb-2 border border-base-content/10">
+          <summary class="collapse-title font-bold">Mechamew</summary>
+          <div class="collapse-content">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-4 pb-4">
+              <div class="card bg-base-100 shadow-md border border-base-200"><figure class="h-32 flex items-center justify-center bg-base-200/50 p-2"><img src="/projects/doctor/mechamew/idle.gif" class="max-h-full max-w-full object-contain" /></figure><div class="text-center text-xs font-bold py-1 bg-base-300">Idle</div></div>
+              <div class="card bg-base-100 shadow-md border border-base-200"><figure class="h-32 flex items-center justify-center bg-base-200/50 p-2"><img src="/projects/doctor/mechamew/attack.gif" class="max-h-full max-w-full object-contain" /></figure><div class="text-center text-xs font-bold py-1 bg-base-300">Attack</div></div>
+            </div>
           </div>
+        </details>
 
-          <div class="card bg-base-100 shadow-md border border-base-200">
-            <figure class="h-32 flex items-center justify-center bg-base-200/50 p-2">
-              <img src="/projects/doctor/nyokimon/idle.gif" class="max-h-full max-w-full object-contain" />
-            </figure>
-            <div class="text-center text-xs font-bold py-2 bg-base-300">Nyokimon</div>
+        <details class="collapse collapse-plus bg-base-100 mb-2 border border-base-content/10">
+          <summary class="collapse-title font-bold">Nyokimon</summary>
+          <div class="collapse-content">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-4 pb-4">
+              <div class="card bg-base-100 shadow-md border border-base-200"><figure class="h-32 flex items-center justify-center bg-base-200/50 p-2"><img src="/projects/doctor/nyokimon/idle.gif" class="max-h-full max-w-full object-contain" /></figure><div class="text-center text-xs font-bold py-1 bg-base-300">Idle</div></div>
+              <div class="card bg-base-100 shadow-md border border-base-200"><figure class="h-32 flex items-center justify-center bg-base-200/50 p-2"><img src="/projects/doctor/nyokimon/walk.gif" class="max-h-full max-w-full object-contain" /></figure><div class="text-center text-xs font-bold py-1 bg-base-300">Walk</div></div>
+            </div>
           </div>
+        </details>
 
-          <div class="card bg-base-100 shadow-md border border-base-200">
-            <figure class="h-32 flex items-center justify-center bg-base-200/50 p-2">
-              <img src="/projects/doctor/pabumon/idle.gif" class="max-h-full max-w-full object-contain" />
-            </figure>
-            <div class="text-center text-xs font-bold py-2 bg-base-300">Pabumon</div>
+        <details class="collapse collapse-plus bg-base-100 mb-2 border border-base-content/10">
+          <summary class="collapse-title font-bold">Pabumon</summary>
+          <div class="collapse-content">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-4 pb-4">
+              <div class="card bg-base-100 shadow-md border border-base-200"><figure class="h-32 flex items-center justify-center bg-base-200/50 p-2"><img src="/projects/doctor/pabumon/idle.gif" class="max-h-full max-w-full object-contain" /></figure><div class="text-center text-xs font-bold py-1 bg-base-300">Idle</div></div>
+              <div class="card bg-base-100 shadow-md border border-base-200"><figure class="h-32 flex items-center justify-center bg-base-200/50 p-2"><img src="/projects/doctor/pabumon/walk.gif" class="max-h-full max-w-full object-contain" /></figure><div class="text-center text-xs font-bold py-1 bg-base-300">Walk</div></div>
+            </div>
           </div>
+        </details>
 
-          <div class="card bg-base-100 shadow-md border border-base-200">
-            <figure class="h-32 flex items-center justify-center bg-base-200/50 p-2">
-              <img src="/projects/doctor/punimon/idle.gif" class="max-h-full max-w-full object-contain" />
-            </figure>
-            <div class="text-center text-xs font-bold py-2 bg-base-300">Punimon</div>
+        <details class="collapse collapse-plus bg-base-100 mb-2 border border-base-content/10">
+          <summary class="collapse-title font-bold">Punimon</summary>
+          <div class="collapse-content">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-4 pb-4">
+              <div class="card bg-base-100 shadow-md border border-base-200"><figure class="h-32 flex items-center justify-center bg-base-200/50 p-2"><img src="/projects/doctor/punimon/idle.gif" class="max-h-full max-w-full object-contain" /></figure><div class="text-center text-xs font-bold py-1 bg-base-300">Idle</div></div>
+              <div class="card bg-base-100 shadow-md border border-base-200"><figure class="h-32 flex items-center justify-center bg-base-200/50 p-2"><img src="/projects/doctor/punimon/walk.gif" class="max-h-full max-w-full object-contain" /></figure><div class="text-center text-xs font-bold py-1 bg-base-300">Walk</div></div>
+            </div>
           </div>
+        </details>
 
-        </div>
       </div>
     </div>
   </details>
@@ -251,13 +301,20 @@ import HorizontalCard from "../../components/HorizontalCard.astro";
     <div class="collapse-content">
       <div class="pt-4">
         
-        <HorizontalCard
-          title="Dark Magician"
-          img="/projects/doctor/darkmagician/idle.gif"
-          desc="Full character model with staff animation."
-          url="#"
-          badge="Character"
-        />
+        <p class="mb-6 opacity-70">
+          Click below to see the animation set.
+        </p>
+
+        <details class="collapse collapse-plus bg-base-100 mb-2 border border-base-content/10">
+          <summary class="collapse-title font-bold">Dark Magician</summary>
+          <div class="collapse-content">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-4 pb-4">
+              <div class="card bg-base-100 shadow-md border border-base-200"><figure class="h-32 flex items-center justify-center bg-base-200/50 p-2"><img src="/projects/doctor/darkmagician/idle.gif" class="max-h-full max-w-full object-contain" /></figure><div class="text-center text-xs font-bold py-1 bg-base-300">Idle</div></div>
+              <div class="card bg-base-100 shadow-md border border-base-200"><figure class="h-32 flex items-center justify-center bg-base-200/50 p-2"><img src="/projects/doctor/darkmagician/walk.gif" class="max-h-full max-w-full object-contain" /></figure><div class="text-center text-xs font-bold py-1 bg-base-300">Walk</div></div>
+              <div class="card bg-base-100 shadow-md border border-base-200"><figure class="h-32 flex items-center justify-center bg-base-200/50 p-2"><img src="/projects/doctor/darkmagician/attack.gif" class="max-h-full max-w-full object-contain" /></figure><div class="text-center text-xs font-bold py-1 bg-base-300">Attack</div></div>
+            </div>
+          </div>
+        </details>
 
       </div>
     </div>
