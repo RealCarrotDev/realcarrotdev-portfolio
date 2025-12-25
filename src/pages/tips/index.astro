@@ -1,0 +1,44 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Tips" sideBarActiveItemID="Support">
+  <div class="pb-12 mt-5">
+    <div class="text-xl py-1">Restoring Sanity... 🥕</div>
+    <div class="text-5xl font-bold">Fuel the Carrot</div>
+    <div class="py-2">
+      <p class="text-lg">
+        Thanks for supporting my work and keeping my sanity levels stable.
+      </p>
+    </div>
+    
+    <div class="mt-8 w-full flex justify-center">
+      <div class="kofi-card">
+        <iframe 
+          id='kofiframe' 
+          src='https://ko-fi.com/realcarrotdev/?hidefeed=true&widget=true&embed=true&preview=true' 
+          style='border:none;width:100%;padding:0;' 
+          height='712' 
+          title='realcarrotdev'
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .kofi-card {
+    background: transparent;
+    border-radius: 16px;
+    overflow: hidden;
+    max-width: 500px;
+    width: 100%;
+    /* Invert colors to create Dark Mode */
+    filter: invert(0.92) hue-rotate(180deg);
+  }
+  
+  /* This prevents your profile picture from looking inverted/scary */
+  iframe {
+    /* No filter here, we just filter the container */
+  }
+</style>
