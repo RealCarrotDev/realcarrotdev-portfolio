@@ -27,13 +27,18 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 </BaseLayout>
 
 <style>
-  /* This makes the white iframe look like a designed card */
   .kofi-card {
-    background: white;
-    border-radius: 16px;       /* Rounds the corners */
-    overflow: hidden;          /* Clips the sharp edges of the iframe */
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5); /* Adds a dark shadow */
-    max-width: 500px;          /* Prevents it from getting too wide */
+    background: transparent;
+    border-radius: 16px;
+    overflow: hidden;
+    max-width: 500px;
     width: 100%;
+    /* Invert colors to create Dark Mode */
+    filter: invert(0.92) hue-rotate(180deg);
+  }
+  
+  /* This prevents your profile picture from looking inverted/scary */
+  iframe {
+    /* No filter here, we just filter the container */
   }
 </style>
