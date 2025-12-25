@@ -1,0 +1,64 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import HorizontalCard from "../../components/HorizontalCard.astro";
+---
+
+<BaseLayout title="Toyota's Commissions" sideBarActiveItemID="projects">
+  
+  <div class="mb-6">
+    <a href="/projects" class="btn btn-outline btn-sm gap-2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+      Back to Portfolio
+    </a>
+  </div>
+
+  <div class="text-5xl font-bold mb-2">Commissions for Toyota</div>
+  <div class="text-xl py-2 mb-10 text-gray-400">
+    Projects focusing on stylized character adaptations and Hazbin Hotel assets.
+  </div>
+
+  <details class="collapse collapse-arrow bg-base-300 mb-6">
+    <summary class="collapse-title text-2xl font-bold">Hazbin Hotel Series</summary>
+    <div class="collapse-content">
+      <div class="pt-4">
+        <p class="mb-6 opacity-70">
+          Full character rigs and animation sets.
+        </p>
+
+        <details class="collapse collapse-plus bg-base-100 mb-2 border border-base-content/10">
+          <summary class="collapse-title font-bold">Alastor (Radio Demon)</summary>
+          <div class="collapse-content">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-4 pb-4">
+              <div class="card bg-base-100 shadow-md border border-base-200"><figure class="h-32 flex items-center justify-center bg-base-200/50 p-2"><img src="/projects/toyota/alastor/idle.gif" class="max-h-full max-w-full object-contain" /></figure><div class="text-center text-xs font-bold py-1 bg-base-300">Idle</div></div>
+              <div class="card bg-base-100 shadow-md border border-base-200"><figure class="h-32 flex items-center justify-center bg-base-200/50 p-2"><img src="/projects/toyota/alastor/walk.gif" class="max-h-full max-w-full object-contain" /></figure><div class="text-center text-xs font-bold py-1 bg-base-300">Walk</div></div>
+              <div class="card bg-base-100 shadow-md border border-base-200"><figure class="h-32 flex items-center justify-center bg-base-200/50 p-2"><img src="/projects/toyota/alastor/attack.gif" class="max-h-full max-w-full object-contain" /></figure><div class="text-center text-xs font-bold py-1 bg-base-300">Staff Attack</div></div>
+            </div>
+          </div>
+        </details>
+
+        <details class="collapse collapse-plus bg-base-100 mb-2 border border-base-content/10">
+          <summary class="collapse-title font-bold">Angel Dust</summary>
+          <div class="collapse-content">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-4 pb-4">
+              <div class="card bg-base-100 shadow-md border border-base-200"><figure class="h-32 flex items-center justify-center bg-base-200/50 p-2"><img src="/projects/toyota/angeldust/idle.gif" class="max-h-full max-w-full object-contain" /></figure><div class="text-center text-xs font-bold py-1 bg-base-300">Idle</div></div>
+              <div class="card bg-base-100 shadow-md border border-base-200"><figure class="h-32 flex items-center justify-center bg-base-200/50 p-2"><img src="/projects/toyota/angeldust/walk.gif" class="max-h-full max-w-full object-contain" /></figure><div class="text-center text-xs font-bold py-1 bg-base-300">Walk</div></div>
+              <div class="card bg-base-100 shadow-md border border-base-200"><figure class="h-32 flex items-center justify-center bg-base-200/50 p-2"><img src="/projects/toyota/angeldust/shoot.gif" class="max-h-full max-w-full object-contain" /></figure><div class="text-center text-xs font-bold py-1 bg-base-300">Tommy Gun</div></div>
+            </div>
+          </div>
+        </details>
+
+        <details class="collapse collapse-plus bg-base-100 mb-2 border border-base-content/10">
+          <summary class="collapse-title font-bold">Husk</summary>
+          <div class="collapse-content">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-4 pb-4">
+              <div class="card bg-base-100 shadow-md border border-base-200"><figure class="h-32 flex items-center justify-center bg-base-200/50 p-2"><img src="/projects/toyota/husk/idle.gif" class="max-h-full max-w-full object-contain" /></figure><div class="text-center text-xs font-bold py-1 bg-base-300">Idle</div></div>
+              <div class="card bg-base-100 shadow-md border border-base-200"><figure class="h-32 flex items-center justify-center bg-base-200/50 p-2"><img src="/projects/toyota/husk/cards.gif" class="max-h-full max-w-full object-contain" /></figure><div class="text-center text-xs font-bold py-1 bg-base-300">Card Throw</div></div>
+            </div>
+          </div>
+        </details>
+
+      </div>
+    </div>
+  </details>
+
+</BaseLayout>
