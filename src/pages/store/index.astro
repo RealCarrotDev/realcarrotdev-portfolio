@@ -13,8 +13,6 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
     </div>
     
     <div class="mt-8 w-full flex justify-center">
-      <iframe 
-       <div class="mt-8 w-full flex justify-center">
       <div class="kofi-card">
         <iframe 
           id='kofiframe' 
@@ -25,18 +23,17 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
         ></iframe>
       </div>
     </div>
-    
-    <style>
-      .kofi-card {
-        background: white; /* Matches the iframe background */
-        border-radius: 16px; /* Rounds the corners */
-        overflow: hidden; /* Clips the square iframe corners */
-        box-shadow: 0 10px 30px rgba(0,0,0,0.5); /* Adds a nice shadow */
-        max-width: 500px; /* Keeps it from getting too wide */
-        width: 100%;
-      }
-    </style>
-      ></iframe>
-    </div>
   </div>
 </BaseLayout>
+
+<style>
+  /* This makes the white iframe look like a designed card */
+  .kofi-card {
+    background: white;
+    border-radius: 16px;       /* Rounds the corners */
+    overflow: hidden;          /* Clips the sharp edges of the iframe */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5); /* Adds a dark shadow */
+    max-width: 500px;          /* Prevents it from getting too wide */
+    width: 100%;
+  }
+</style>
