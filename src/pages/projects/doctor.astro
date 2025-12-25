@@ -1,0 +1,117 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import HorizontalCard from "../../components/HorizontalCard.astro";
+---
+
+<BaseLayout title="Doctor's Commissions" sideBarActiveItemID="projects">
+  
+  <div class="mb-6">
+    <a href="/projects" class="btn btn-outline btn-sm gap-2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+      Back to Portfolio
+    </a>
+  </div>
+
+  <div class="text-5xl font-bold mb-2">Commissions for Doctor</div>
+  <div class="text-xl py-2 mb-10 text-gray-400">
+    A collection of massive projects including the Pikachu series and anime adaptations.
+  </div>
+
+  <details class="collapse collapse-arrow bg-base-300 mb-6">
+    <summary class="collapse-title text-2xl font-bold">Fat Pikachu Variations (20+)</summary>
+    <div class="collapse-content">
+      <div class="pt-4">
+        <p class="mb-6 opacity-70">
+          Click any variation below to see its specific animation set.
+        </p>
+
+        <details class="collapse collapse-plus bg-base-100 mb-2 border border-base-content/10">
+          <summary class="collapse-title font-bold">1. Original Fat Pikachu</summary>
+          <div class="collapse-content">
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-4 pb-4">
+              
+              <div class="rounded-xl overflow-hidden shadow-lg">
+                <img src="/pikachu_original_idle.gif" alt="Idle" class="w-full" />
+                <div class="text-center text-xs py-1 bg-base-200">Idle</div>
+              </div>
+
+              <div class="rounded-xl overflow-hidden shadow-lg">
+                <img src="/pikachu_original_walk.gif" alt="Walk" class="w-full" />
+                <div class="text-center text-xs py-1 bg-base-200">Walk</div>
+              </div>
+
+              <div class="rounded-xl overflow-hidden shadow-lg">
+                <img src="/pikachu_original_eat.gif" alt="Eat" class="w-full" />
+                <div class="text-center text-xs py-1 bg-base-200">Eat Animation</div>
+              </div>
+
+            </div>
+            </div>
+        </details>
+        <details class="collapse collapse-plus bg-base-100 mb-2 border border-base-content/10">
+          <summary class="collapse-title font-bold">2. Business Suit Pikachu</summary>
+          <div class="collapse-content">
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-4 pb-4">
+              <div class="rounded-xl overflow-hidden shadow-lg">
+                <img src="/pikachu_business_idle.gif" alt="Idle" class="w-full" />
+                <div class="text-center text-xs py-1 bg-base-200">Idle</div>
+              </div>
+              <div class="rounded-xl overflow-hidden shadow-lg">
+                <img src="/pikachu_business_walk.gif" alt="Walk" class="w-full" />
+                <div class="text-center text-xs py-1 bg-base-200">Walk (Briefcase)</div>
+              </div>
+              <div class="rounded-xl overflow-hidden shadow-lg">
+                <img src="/pikachu_business_phone.gif" alt="Phone" class="w-full" />
+                <div class="text-center text-xs py-1 bg-base-200">Phone Call</div>
+              </div>
+            </div>
+
+          </div>
+        </details>
+        
+
+        <details class="collapse collapse-plus bg-base-100 mb-2 border border-base-content/10">
+          <summary class="collapse-title font-bold">3. Clown Pikachu</summary>
+          <div class="collapse-content">
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-4 pb-4">
+              <div class="rounded-xl overflow-hidden shadow-lg">
+                <img src="/pikachu_clown_idle.gif" alt="Idle" class="w-full" />
+                <div class="text-center text-xs py-1 bg-base-200">Idle</div>
+              </div>
+              <div class="rounded-xl overflow-hidden shadow-lg">
+                <img src="/pikachu_clown_juggle.gif" alt="Juggle" class="w-full" />
+                <div class="text-center text-xs py-1 bg-base-200">Juggling</div>
+              </div>
+              <div class="rounded-xl overflow-hidden shadow-lg">
+                <img src="/pikachu_clown_honk.gif" alt="Honk" class="w-full" />
+                <div class="text-center text-xs py-1 bg-base-200">Nose Honk</div>
+              </div>
+            </div>
+
+          </div>
+        </details>
+        
+        </div>
+    </div>
+  </details>
+
+
+  <details class="collapse collapse-arrow bg-base-300 mb-6">
+    <summary class="collapse-title text-2xl font-bold">Yugioh Collection</summary>
+    <div class="collapse-content">
+      <div class="pt-4">
+        <HorizontalCard
+          title="Dark Magician"
+          img="/yugioh_dm.png"
+          desc="Full character model with staff animation."
+          url="#"
+          badge="Character"
+        />
+        </div>
+    </div>
+  </details>
+
+</BaseLayout>
