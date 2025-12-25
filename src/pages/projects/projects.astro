@@ -1,0 +1,73 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import HorizontalCard from "../../components/HorizontalCard.astro";
+---
+
+<BaseLayout title="Portfolio Hub" sideBarActiveItemID="projects">
+  <div>
+    <div class="text-5xl font-bold mb-5">Animation Portfolio</div>
+    <div class="mb-10 text-justify">
+      Browse my work by Client or Project Group below.
+    </div>
+  </div>
+
+  <div class="text-3xl font-bold mb-4 mt-8">Client Commissions</div>
+  <div class="divider"></div>
+
+  <HorizontalCard
+    title="Commissions for Doctor"
+    img="/thumbnails/doctor_thumb.png" 
+    desc="A collection of custom models and animations created for Doctor."
+    url="/projects/doctor"
+    badge="Client Work"
+  />
+  <div class="divider my-0"></div>
+  
+  <HorizontalCard
+    title="Commissions for Toyota"
+    img="/thumbnails/toyota_thumb.png"
+    desc="Assets and animations produced for Toyota."
+    url="/projects/toyota"
+    badge="Client Work"
+  />
+  <div class="divider my-0"></div>
+
+  <HorizontalCard
+    title="Commissions for Fai"
+    img="/thumbnails/fai_thumb.png"
+    desc="Character work and texturing for Fai."
+    url="/projects/fai"
+    badge="Client Work"
+  />
+  <div class="divider my-0"></div>
+
+  <HorizontalCard
+    title="Commissions for Mikirae"
+    img="/thumbnails/mikirae_thumb.png"
+    desc="Detailed animations and model work for Mikirae."
+    url="/projects/mikirae"
+    badge="Client Work"
+  />
+
+
+  <div class="text-3xl font-bold mb-4 mt-12">Server & Game Projects</div>
+  <div class="divider"></div>
+
+  <HorizontalCard
+    title="Storymons"
+    img="/thumbnails/storymons_thumb.png"
+    desc="Extensive creature animations and assets for the Storymons RPG."
+    url="/projects/storymons"
+    badge="Server Project"
+  />
+  <div class="divider my-0"></div>
+
+  <HorizontalCard
+    title="Pikmin Fan Projects"
+    img="/thumbnails/pikmin_thumb.png"
+    desc="Recreations and custom animations within the Pikmin style."
+    url="/projects/pikmin"
+    badge="Fan Project"
+  />
+
+</BaseLayout>
