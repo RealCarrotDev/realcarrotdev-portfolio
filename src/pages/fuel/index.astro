@@ -14,7 +14,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
     
     <div class="mt-8 w-full flex flex-col items-center gap-6">
 
-      <div id="paypal-container-P47XB25VFUTDC" class="w-full max-w-[500px] flex justify-center z-10"></div>
+      <div id="paypal-container-P47XB25VFUTDC" class="w-full max-w-[500px] mx-auto z-10"></div>
 
       <div class="kofi-card">
         <iframe 
@@ -45,12 +45,6 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
     overflow: hidden;
     max-width: 500px;
     width: 100%;
-    /* Invert colors to create Dark Mode */
     filter: invert(0.92) hue-rotate(180deg);
-  }
-  
-  /* This prevents your profile picture from looking inverted/scary */
-  iframe {
-    /* No filter here, we just filter the container */
   }
 </style>
